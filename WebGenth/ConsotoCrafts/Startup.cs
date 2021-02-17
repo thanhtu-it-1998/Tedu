@@ -28,6 +28,8 @@ namespace ConsotoCrafts
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddServerSideBlazor();
+            services.AddHttpClient();
             services.AddControllers();
             services.AddTransient<JsonFileProductService>();
         }
@@ -57,6 +59,7 @@ namespace ConsotoCrafts
             {
                 endpoints.MapRazorPages();
                 endpoints.MapControllers();
+                endpoints.MapBlazorHub();
                 //endpoints.MapGet("/products",context => {
                 //    var products = app.ApplicationServices.GetService<JsonFileProductService>().GetProducts();
                 //    var json = JsonSerializer.Serialize<IEnumerable<Product>>(products);
