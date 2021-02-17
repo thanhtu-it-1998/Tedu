@@ -38,3 +38,8 @@ D:\DotNet\ASP.Net\Tedu\WebGenth\ConsotoCrafts\obj\Debug\net5.0\ref\ConsotoCrafts
 D:\DotNet\ASP.Net\Tedu\WebGenth\ConsotoCrafts\obj\Debug\net5.0\ConsotoCrafts.pdb
 D:\DotNet\ASP.Net\Tedu\WebGenth\ConsotoCrafts\obj\Debug\net5.0\ConsotoCrafts.genruntimeconfig.cache
 D:\DotNet\ASP.Net\Tedu\WebGenth\ConsotoCrafts\obj\Debug\net5.0\ConsotoCrafts.csproj.CopyComplete
+D:\DotNet\ASP.Net\Tedu\WebGenth\ConsotoCrafts\obj\Debug\net5.0\ConsotoCrafts.RazorComponent.input.cache
+D:\DotNet\ASP.Net\Tedu\WebGenth\ConsotoCrafts\obj\Debug\net5.0\RazorDeclaration\Components\ProductList.razor.g.cs
+D:\DotNet\ASP.Net\Tedu\WebGenth\ConsotoCrafts\obj\Debug\net5.0\ConsotoCrafts.RazorComponent.output.cache
+D:\DotNet\ASP.Net\Tedu\WebGenth\ConsotoCrafts\obj\Debug\net5.0\RazorDeclaration\ConsotoCrafts.dll
+D:\DotNet\ASP.Net\Tedu\WebGenth\ConsotoCrafts\obj\Debug\net5.0\Razor\Components\ProductList.razor.g.cs
