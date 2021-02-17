@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ConsotoCrafts.Models;
+using ConsotoCrafts.Services;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using System;
@@ -12,14 +14,19 @@ namespace ConsotoCrafts.Pages
     {
         private readonly ILogger<IndexModel> _logger;
 
-        public IndexModel(ILogger<IndexModel> logger)
+        public IndexModel(ILogger<IndexModel> logger,
+            JsonFileProductService productService)
         {
             _logger = logger;
+            ProductService = productService;
         }
+
+        public JsonFileProductService ProductService { get; }
+        public IEnumerable<Product> Products { get; private set; }
 
         public void OnGet()
         {
-
+            Products = ProductService.GetProducts();
         }
     }
 }
