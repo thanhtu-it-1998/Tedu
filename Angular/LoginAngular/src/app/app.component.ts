@@ -1,31 +1,24 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
+import {StudentService} from './student.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  providers:[StudentService]
 })
-export class AppComponent {
 
-  students: any[] = [
-    {
-        ID: 'std101', FirstName: 'Preety', LastName: 'Tiwary',
-        Branch: 'CSE', DOB: '29/02/1988', Gender: 'Female'
-    },
-    {
-        ID: 'std102', FirstName: 'Anurag', LastName: 'Mohanty', 
-        Branch: 'ETC', DOB: '23/05/1989', Gender: 'Male'
-    },
-    {
-        ID: 'std103', FirstName: 'Priyanka', LastName: 'Dewangan', 
-        Branch: 'CSE', DOB: '24/07/1992', Gender: 'Female'
-    },
-    {
-        ID: 'std104', FirstName: 'Hina', LastName: 'Sharma', 
-        Branch: 'ETC', DOB: '19/08/1990', Gender: 'Female'
-    },
-    {
-        ID: 'std105', FirstName: 'Sambit', LastName: 'Satapathy', 
-        Branch: 'CSE', DOB: '12/94/1991', Gender: 'Male'
+export class AppComponent {  
+    students:any[] = [];
+    pageTitle:string ='';
+    private _studentService: StudentService;
+
+    constructor(studentService: StudentService) {
+        this._studentService = studentService;
+     }
+
+    ngOnInit() {
+        this.students = this._studentService.getStudents();
+        this.pageTitle = this._studentService.getTitle();
     }
-  ];
 }

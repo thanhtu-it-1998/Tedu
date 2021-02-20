@@ -1,3 +1,5 @@
+<h2>{{pageTitle}}</h2>
+
 <table>
     <thead>
         <tr>
@@ -7,25 +9,16 @@
             <th>Branch</th>
             <th>DOB</th>
             <th>Gender</th>
-            <th>IsFirst</th>
-            <th>IsLast</th>
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor='let student of students; let isFirst = first; let isLast = last'>
+        <tr *ngFor='let student of students'>
             <td>{{student.ID}}</td>
             <td>{{student.FirstName}}</td>
             <td>{{student.LastName}}</td>
             <td>{{student.Branch}}</td>
             <td>{{student.DOB}}</td>
             <td>{{student.Gender}}</td>
-            <td>{{isFirst}}</td>
-            <td>{{isLast}}</td>
-        </tr>
-        <tr *ngIf="!students || students.length==0">
-            <td colspan="7">
-                No Students to display
-            </td>
         </tr>
     </tbody>
 </table>
