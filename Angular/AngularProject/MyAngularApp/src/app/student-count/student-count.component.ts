@@ -12,5 +12,4 @@ export class StudentCountComponent {
   male: number = 3;
   @Input()
   female: number = 2;
-
 }
