@@ -4,11 +4,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { MyTitlePipe } from './my-title.pipe';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyTitlePipe
+    MyTitlePipe,
+    LoginComponent
   ],
 
   imports: [
