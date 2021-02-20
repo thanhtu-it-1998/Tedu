@@ -7,14 +7,4 @@ import {Router} from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    constructor(private router : Router){}
-    GetStudent()
-    {
-        this.router.navigate(['/studentLink']);
-    }
-
-    GetStudentDetails()
-    {
-        this.router.navigate(['/studentdetailsLink']);
-    }
 }
