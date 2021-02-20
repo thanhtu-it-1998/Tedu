@@ -1,0 +1,7 @@
+D:\DotNet\ASP.Net\Tedu\DotNetTutorials\AdoNetConsoleApplication\bin\Debug\AdoNetConsoleApplication.exe.config
+D:\DotNet\ASP.Net\Tedu\DotNetTutorials\AdoNetConsoleApplication\bin\Debug\AdoNetConsoleApplication.exe
+D:\DotNet\ASP.Net\Tedu\DotNetTutorials\AdoNetConsoleApplication\bin\Debug\AdoNetConsoleApplication.pdb
+D:\DotNet\ASP.Net\Tedu\DotNetTutorials\AdoNetConsoleApplication\obj\Debug\AdoNetConsoleApplication.csprojAssemblyReference.cache
+D:\DotNet\ASP.Net\Tedu\DotNetTutorials\AdoNetConsoleApplication\obj\Debug\AdoNetConsoleApplication.csproj.CoreCompileInputs.cache
+D:\DotNet\ASP.Net\Tedu\DotNetTutorials\AdoNetConsoleApplication\obj\Debug\AdoNetConsoleApplication.exe
+D:\DotNet\ASP.Net\Tedu\DotNetTutorials\AdoNetConsoleApplication\obj\Debug\AdoNetConsoleApplication.pdb
