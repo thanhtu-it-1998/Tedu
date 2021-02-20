@@ -1,12 +1,20 @@
-<div>
-    <input type="radio" name="rb" (click)="ChangeData(true)" checked> Valid
-    <input type="radio" name="rb" (click)="ChangeData(false)"> Invalid
-</div>
-
-<div *ngIf="isValid">
-    <b>The Data is valid.</b>
-</div>
-
-<div *ngIf="!isValid">
-    <b>The Data is invalid.</b>
-</div>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Student ID</th>
+            <th>Name</th>
+            <th>DOB</th>
+            <th>Gender</th>
+            <th>CourseFee</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let student of students'>
+            <td>{{student.ID | uppercase}}</td>
+            <td>{{student.Name | titlecase}}</td>
+            <td>{{student.DOB | date:'dd/MM/yyyy'}}</td>
+            <td>{{student.Gender | lowercase}}</td>
+            <td>{{student.CourseFee | currency:'USD':true}}</td>
+        </tr>
+    </tbody>
+</table>
