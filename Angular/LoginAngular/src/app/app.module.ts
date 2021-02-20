@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { MyTitlePipe } from './my-title.pipe';
 import { LoginComponent } from './login/login.component';
+import { CustomerrorComponent } from './customerror/customerror.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyTitlePipe,
-    LoginComponent
+    LoginComponent,
+    CustomerrorComponent
   ],
 
   imports: [
