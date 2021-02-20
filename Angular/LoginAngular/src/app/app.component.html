@@ -1,24 +1,12 @@
-<table>
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Branch</th>
-            <th>DOB</th>
-            <th>Gender</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor='let student of students'>
-            <td>{{student.ID}}</td>
-            <td>{{student.FirstName}}</td>
-            <td>{{student.LastName}}</td>
-            <td>{{student.Branch}}</td>
-            <td>{{student.DOB}}</td>
-            <td>{{student.Gender}}</td>
-        </tr>
-    </tbody>
-</table>
-<br />
-<button (click)='getStudents()'>Refresh Students</button>
+<div>
+    <input type="radio" name="rb" (click)="ChangeData(true)" checked> Valid
+    <input type="radio" name="rb" (click)="ChangeData(false)"> Invalid
+</div>
+
+<div *ngIf="isValid">
+    <b>The Data is valid.</b>
+</div>
+
+<div *ngIf="!isValid">
+    <b>The Data is invalid.</b>
+</div>
