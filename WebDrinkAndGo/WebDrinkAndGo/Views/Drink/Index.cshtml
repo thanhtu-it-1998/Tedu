@@ -1,0 +1,8 @@
+﻿@model DrinkIndexViewModel
+
+<div class="row">
+    @foreach (Drink item in Model.Drinks)
+    {
+       @Html.Partial("DrinksSummary",item)
+    }
+</div>

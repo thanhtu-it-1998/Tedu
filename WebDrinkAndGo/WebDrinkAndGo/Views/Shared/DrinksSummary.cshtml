@@ -1,0 +1,15 @@
+﻿@model Drink
+
+<div class="col-4 mt-2">
+    <div class="card">
+        <img src="@Model.ImageUrl" class="card-img m-3" style="width:300px; height:300px" alt="...">
+        <div class="card-body">
+            <div class="d-flex">
+                <h5 class="card-title mr-5 text-primary">@Model.Name</h5>
+                <h5 class="card-title ml-5 text-danger float-right">@Model.Price $</h5>
+            </div>
+            <p class="card-text">@Model.ShortDescription</p>
+            <a href="#" class="btn btn-warning font-weight-bold">Add to Cart</a>
+        </div>
+    </div>
+</div>
